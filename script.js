@@ -28,3 +28,9 @@ fetchbtn.addEventListener("click", function () {
       alert("ERROR!");
     });
 });
+
+$("#jquery").click(function () {
+  $.getJSON(url).done(function (data) {
+    $("#quote").text(data[0]);
+  });
+});
